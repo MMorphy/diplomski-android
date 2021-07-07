@@ -13,4 +13,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="income_add">Add incomes</string>
+    <string name="expense_add">Add expenses</string>
+    <string name="entries_list">Show entries</string>
 </resources>

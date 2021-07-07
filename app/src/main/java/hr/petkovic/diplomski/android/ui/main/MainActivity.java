@@ -1,6 +1,8 @@
 package hr.petkovic.diplomski.android.ui.main;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -11,6 +13,9 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import hr.petkovic.diplomski.android.R;
+import hr.petkovic.diplomski.android.ui.expense.ExpenseAddEditActivity;
+import hr.petkovic.diplomski.android.ui.income.IncomeAddEditActivity;
+import hr.petkovic.diplomski.android.ui.list.EntriesActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,4 +34,17 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
     }
 
+    public void addIncome(View view){
+        Intent intent = new Intent(this, IncomeAddEditActivity.class);
+        startActivity(intent);
+    }
+
+    public void addExpense(View view){
+        Intent intent = new Intent(this, ExpenseAddEditActivity.class);
+        startActivity(intent);
+    }
+
+    public void showEntries(View view){
+        Intent intent = new Intent(this, EntriesActivity.class);
+        startActivity(intent);    }
 }

@@ -10,6 +10,8 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import hr.petkovic.diplomski.android.R;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

@@ -12,7 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import hr.petkovic.diplomski.android.ui.main.R;
+import hr.petkovic.diplomski.android.R;
+
 
 public class HomeFragment extends Fragment {
 

@@ -1,8 +1,9 @@
 package hr.petkovic.diplomski.android.data.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Entry {
+public class Entry implements Serializable {
 
     private Long id;
     private Long amount;

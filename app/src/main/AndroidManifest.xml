@@ -10,21 +10,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DiplomskiAndroid">
-        <activity android:name=".ui.expense.ExpenseAddEditActivity">
+        android:theme="@style/Theme.DiplomskiAndroid"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.income.IncomeEditActivity"></activity>
+        <activity android:name=".ui.expense.ExpenseEditActivity" />
+        <activity android:name=".ui.expense.ExpenseAddActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.main.MainActivity"/>
+                android:value=".ui.main.MainActivity" />
         </activity>
-        <activity android:name=".ui.income.IncomeAddEditActivity" >
+        <activity android:name=".ui.income.IncomeAddActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.main.MainActivity"/>
+                android:value=".ui.main.MainActivity" />
         </activity>
         <activity android:name=".ui.list.EntriesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.main.MainActivity"/>
+                android:value=".ui.main.MainActivity" />
         </activity>
         <activity
             android:name=".ui.main.MainActivity"

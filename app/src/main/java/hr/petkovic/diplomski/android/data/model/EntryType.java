@@ -1,6 +1,8 @@
 package hr.petkovic.diplomski.android.data.model;
 
-public class EntryType {
+import java.io.Serializable;
+
+public class EntryType implements Serializable {
     private Long id;
     private String mainType;
     private String subType;
@@ -36,5 +38,10 @@ public class EntryType {
 
     public void setSubType(String subType) {
         this.subType = subType;
+    }
+
+    @Override
+    public String toString() {
+        return mainType + '-' + subType;
     }
 }
